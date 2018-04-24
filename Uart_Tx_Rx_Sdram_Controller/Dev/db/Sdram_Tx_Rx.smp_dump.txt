@@ -1,0 +1,24 @@
+
+State Machine - |Sdram_Tx_Rx_Top|Sdram_Top:Sdram_Top_inst|pre_state
+Name pre_state.10000 pre_state.01000 pre_state.00100 pre_state.00010 pre_state.00001 
+pre_state.00001 0 0 0 0 0 
+pre_state.00010 0 0 0 1 1 
+pre_state.00100 0 0 1 0 1 
+pre_state.01000 0 1 0 0 1 
+pre_state.10000 1 0 0 0 1 
+
+State Machine - |Sdram_Tx_Rx_Top|Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|pre_state
+Name pre_state.00111 pre_state.00110 pre_state.00100 pre_state.00011 pre_state.00001 
+pre_state.00001 0 0 0 0 0 
+pre_state.00011 0 0 0 1 1 
+pre_state.00100 0 0 1 0 1 
+pre_state.00110 0 1 0 0 1 
+pre_state.00111 1 0 0 0 1 
+
+State Machine - |Sdram_Tx_Rx_Top|Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|pre_state
+Name pre_state.00111 pre_state.00101 pre_state.00100 pre_state.00010 pre_state.00001 
+pre_state.00001 0 0 0 0 0 
+pre_state.00010 0 0 0 1 1 
+pre_state.00100 0 0 1 0 1 
+pre_state.00101 0 1 0 0 1 
+pre_state.00111 1 0 0 0 1 

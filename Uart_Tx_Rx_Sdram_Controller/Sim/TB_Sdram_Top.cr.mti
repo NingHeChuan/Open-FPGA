@@ -1,0 +1,67 @@
+F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Tx_Rx_Top.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Tx_Rx_Top.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Tx_Rx_Top
+
+Top level modules:
+	Sdram_Tx_Rx_Top
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Top.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Top.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Top
+
+Top level modules:
+	Sdram_Top
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Write.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Write.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Write
+
+Top level modules:
+	Sdram_Write
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Refresh.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Refresh.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Refresh
+
+Top level modules:
+	Sdram_Refresh
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Read.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Read.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Read
+
+Top level modules:
+	Sdram_Read
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/sdram_model_plus.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/sdram_model_plus.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sdram_model_plus
+
+Top level modules:
+	sdram_model_plus
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Init.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Init.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Init
+
+Top level modules:
+	Sdram_Init
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Para.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Sdram_Para.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Cmd_Decode.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Cmd_Decode.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Cmd_Decode
+
+Top level modules:
+	Cmd_Decode
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Sim/TB_Sdram_Top.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Sim/TB_Sdram_Top.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module TB_Sdram_Top
+
+Top level modules:
+	TB_Sdram_Top
+
+} {} {}}

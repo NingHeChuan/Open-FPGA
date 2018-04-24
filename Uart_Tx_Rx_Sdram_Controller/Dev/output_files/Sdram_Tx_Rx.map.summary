@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Apr 24 18:55:17 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : Sdram_Tx_Rx
+Top-level Entity Name : Sdram_Tx_Rx_Top
+Family : Cyclone IV E
+Total logic elements : 509
+    Total combinational functions : 474
+    Dedicated logic registers : 317
+Total registers : 317
+Total pins : 40
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

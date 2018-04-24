@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Sdram_Tx_Rx">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sdram_Tx_Rx_Top|Clk_PLL:Clk_PLL_inst|altpll:altpll_component" CBX_FILE_NAME="Clk_PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sdram_Tx_Rx_Top|fifo8x16:rfifo8x16_inst|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_in21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sdram_Tx_Rx_Top|fifo8x16:wfifo8x16_inst|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_in21.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

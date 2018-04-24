@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at Sdram_Write.v(83): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at Sdram_Top.v(139): extended using "x" or "z"
+Warning (10268): Verilog HDL information at Sdram_Read.v(85): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at Cmd_Decode.v(26): object "REC_NUM" differs only in case from object "rec_num" in the same scope

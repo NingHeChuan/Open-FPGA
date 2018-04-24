@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -6.349
+TNS   : -305.902
+
+Type  : Slow 1200mV 85C Model Setup 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : -1.233
+TNS   : -1.621
+
+Type  : Slow 1200mV 85C Model Setup 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : -0.891
+TNS   : -3.808
+
+Type  : Slow 1200mV 85C Model Hold 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : -3.158
+TNS   : -9.328
+
+Type  : Slow 1200mV 85C Model Hold 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : -3.031
+TNS   : -13.707
+
+Type  : Slow 1200mV 85C Model Hold 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.217
+TNS   : -0.421
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.699
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_24M'
+Slack : 20.767
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -5.697
+TNS   : -271.146
+
+Type  : Slow 1200mV 0C Model Setup 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : -1.502
+TNS   : -2.067
+
+Type  : Slow 1200mV 0C Model Setup 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : -1.146
+TNS   : -4.833
+
+Type  : Slow 1200mV 0C Model Hold 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : -2.705
+TNS   : -7.740
+
+Type  : Slow 1200mV 0C Model Hold 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : -2.609
+TNS   : -11.904
+
+Type  : Slow 1200mV 0C Model Hold 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.336
+TNS   : -0.716
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.667
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_24M'
+Slack : 20.776
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.055
+TNS   : -149.473
+
+Type  : Fast 1200mV 0C Model Setup 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : -0.361
+TNS   : -0.361
+
+Type  : Fast 1200mV 0C Model Setup 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : -0.226
+TNS   : -0.573
+
+Type  : Fast 1200mV 0C Model Hold 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : -1.699
+TNS   : -5.937
+
+Type  : Fast 1200mV 0C Model Hold 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : -1.647
+TNS   : -7.660
+
+Type  : Fast 1200mV 0C Model Hold 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.046
+TNS   : -0.085
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sdram_Top:Sdram_Top_inst|Sdram_Write:Sdram_Write_inst|break_cnt[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sdram_Top:Sdram_Top_inst|Sdram_Read:Sdram_Read_inst|break_cnt[0]'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk_PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.735
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_24M'
+Slack : 20.427
+TNS   : 0.000
+
+------------------------------------------------------------

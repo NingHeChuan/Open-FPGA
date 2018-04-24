@@ -1,0 +1,15 @@
+F:/QuartusII/Sdram_Controller_Ninghechuan/Sim/TB_Cmd_Decode.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Sim/TB_Cmd_Decode.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module TB_Cmd_Decode
+
+Top level modules:
+	TB_Cmd_Decode
+
+} {} {}} F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Cmd_Decode.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Sdram_Controller_Ninghechuan/Src/Cmd_Decode.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Cmd_Decode
+
+Top level modules:
+	Cmd_Decode
+
+} {} {}}
