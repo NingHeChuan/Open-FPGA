@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 03 20:36:04 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : Uart_Pic_Sdram_VGA
+Top-level Entity Name : Uart_Pic_Sdram_VGA
+Family : Cyclone IV E
+Device : EP4CE10E22C8
+Timing Models : Final
+Total logic elements : 814 / 10,320 ( 8 % )
+    Total combinational functions : 662 / 10,320 ( 6 % )
+    Dedicated logic registers : 538 / 10,320 ( 5 % )
+Total registers : 538
+Total pins : 59 / 92 ( 64 % )
+Total virtual pins : 0
+Total memory bits : 12,288 / 423,936 ( 3 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )
