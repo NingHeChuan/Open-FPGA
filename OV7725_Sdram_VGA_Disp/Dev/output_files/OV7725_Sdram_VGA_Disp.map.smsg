@@ -1,0 +1,8 @@
+Warning (10268): Verilog HDL information at Sdram_Write.v(85): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at Sdram_Top.v(152): extended using "x" or "z"
+Warning (10268): Verilog HDL information at Sdram_Read.v(86): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at sdram_model_plus.v(866): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at sdram_model_plus.v(867): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at sdram_model_plus.v(868): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at sdram_model_plus.v(869): extended using "x" or "z"
+Warning (10268): Verilog HDL information at sdram_model_plus.v(330): always construct contains both blocking and non-blocking assignments

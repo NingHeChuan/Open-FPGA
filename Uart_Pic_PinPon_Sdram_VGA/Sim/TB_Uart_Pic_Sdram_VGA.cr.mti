@@ -1,0 +1,231 @@
+F:/QuartusII/Uart_Pic_Sdram_VGA/Sim/TB_Uart_Pic_Sdram_VGA.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Sim/TB_Uart_Pic_Sdram_VGA.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module TB_Uart_Pic_Sdram_VGA
+
+Top level modules:
+	TB_Uart_Pic_Sdram_VGA
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Uart_Byte_Rx.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Uart_Byte_Rx.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Uart_Byte_Rx
+
+Top level modules:
+	Uart_Byte_Rx
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Write.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Write.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Write
+
+Top level modules:
+	Sdram_Write
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Top.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Top.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Top
+
+Top level modules:
+	Sdram_Top
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Read.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Read.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Read
+
+Top level modules:
+	Sdram_Read
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Init.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Init.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Init
+
+Top level modules:
+	Sdram_Init
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/sdram_model_plus.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/sdram_model_plus.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sdram_model_plus
+
+Top level modules:
+	sdram_model_plus
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Para.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Para.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Sim/UART_Byte_Tx.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Sim/UART_Byte_Tx.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module UART_Byte_Tx
+
+Top level modules:
+	UART_Byte_Tx
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Refresh.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Sdram_Refresh.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Sdram_Refresh
+
+Top level modules:
+	Sdram_Refresh
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/VGA_Drive.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/VGA_Drive.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module VGA_Drive
+
+Top level modules:
+	VGA_Drive
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Sim/altera_lib/altera_mf.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Sim/altera_lib/altera_mf.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module lcell
+-- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+-- Compiling module ALTERA_MF_HINT_EVALUATION
+-- Compiling module ALTERA_DEVICE_FAMILIES
+-- Compiling module dffp
+-- Compiling module pll_iobuf
+-- Compiling module stx_m_cntr
+-- Compiling module stx_n_cntr
+-- Compiling module stx_scale_cntr
+-- Compiling module MF_pll_reg
+-- Compiling module MF_stratix_pll
+-- Compiling module arm_m_cntr
+-- Compiling module arm_n_cntr
+-- Compiling module arm_scale_cntr
+-- Compiling module MF_stratixii_pll
+-- Compiling module ttn_m_cntr
+-- Compiling module ttn_n_cntr
+-- Compiling module ttn_scale_cntr
+-- Compiling module MF_stratixiii_pll
+-- Compiling module cda_m_cntr
+-- Compiling module cda_n_cntr
+-- Compiling module cda_scale_cntr
+-- Compiling module MF_cycloneiii_pll
+-- Compiling module MF_cycloneiiigl_m_cntr
+-- Compiling module MF_cycloneiiigl_n_cntr
+-- Compiling module MF_cycloneiiigl_scale_cntr
+-- Compiling module cycloneiiigl_post_divider
+-- Compiling module MF_cycloneiiigl_pll
+-- Compiling module altpll
+-- Compiling module altlvds_rx
+-- Compiling module stratix_lvds_rx
+-- Compiling module stratixgx_dpa_lvds_rx
+-- Compiling module stratixii_lvds_rx
+-- Compiling module flexible_lvds_rx
+-- Compiling module stratixiii_lvds_rx
+-- Compiling module stratixiii_lvds_rx_channel
+-- Compiling module stratixiii_lvds_rx_dpa
+-- Compiling module altlvds_tx
+-- Compiling module stratixv_local_clk_divider
+-- Compiling module stratix_tx_outclk
+-- Compiling module stratixii_tx_outclk
+-- Compiling module flexible_lvds_tx
+-- Compiling module dcfifo_dffpipe
+-- Compiling module dcfifo_fefifo
+-- Compiling module dcfifo_async
+-- Compiling module dcfifo_sync
+-- Compiling module dcfifo_low_latency
+-- Compiling module dcfifo_mixed_widths
+-- Compiling module dcfifo
+-- Compiling module altaccumulate
+-- Compiling module altmult_accum
+-- Compiling module altmult_add
+-- Compiling module altfp_mult
+-- Compiling module altsqrt
+-- Compiling module altclklock
+-- Compiling module altddio_in
+-- Compiling module altddio_out
+-- Compiling module altddio_bidir
+-- Compiling module altdpram
+-- Compiling module altsyncram
+-- Compiling module alt3pram
+-- Compiling module parallel_add
+-- Compiling module scfifo
+-- Compiling module altshift_taps
+-- Compiling module a_graycounter
+-- Compiling module altsquare
+-- Compiling module altera_std_synchronizer
+-- Compiling module altera_std_synchronizer_bundle
+-- Compiling module alt_cal
+-- Compiling module alt_cal_mm
+-- Compiling module alt_cal_c3gxb
+-- Compiling module alt_cal_sv
+-- Compiling module alt_cal_av
+-- Compiling module alt_aeq_s4
+-- Compiling module alt_eyemon
+-- Compiling module alt_dfe
+-- Compiling module signal_gen
+-- Compiling module jtag_tap_controller
+-- Compiling module dummy_hub
+-- Compiling module sld_virtual_jtag
+-- Compiling module sld_signaltap
+-- Compiling module altstratixii_oct
+-- Compiling module altparallel_flash_loader
+-- Compiling module altserial_flash_loader
+-- Compiling module sld_virtual_jtag_basic
+-- Compiling module altsource_probe
+
+Top level modules:
+	lcell
+	altpll
+	altlvds_rx
+	altlvds_tx
+	dcfifo
+	altaccumulate
+	altmult_accum
+	altmult_add
+	altfp_mult
+	altsqrt
+	altclklock
+	altddio_bidir
+	altdpram
+	alt3pram
+	parallel_add
+	scfifo
+	altshift_taps
+	a_graycounter
+	altsquare
+	altera_std_synchronizer_bundle
+	alt_cal
+	alt_cal_mm
+	alt_cal_c3gxb
+	alt_cal_sv
+	alt_cal_av
+	alt_aeq_s4
+	alt_eyemon
+	alt_dfe
+	sld_virtual_jtag
+	sld_signaltap
+	altstratixii_oct
+	altparallel_flash_loader
+	altserial_flash_loader
+	sld_virtual_jtag_basic
+	altsource_probe
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Uart_Pic_Sdram_VGA.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Uart_Pic_Sdram_VGA.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Uart_Pic_Sdram_VGA
+
+Top level modules:
+	Uart_Pic_Sdram_VGA
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/IP_Core/Clk_Pll.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/IP_Core/Clk_Pll.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Clk_Pll
+
+Top level modules:
+	Clk_Pll
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/VGA_Dispaly.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/VGA_Dispaly.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module VGA_Dispaly
+
+Top level modules:
+	VGA_Dispaly
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Auto_Write_Read.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Auto_Write_Read.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Auto_Write_Read
+
+Top level modules:
+	Auto_Write_Read
+
+} {} {}} F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Lcd_Para.v {1 {vlog -work work -novopt -stats=none F:/QuartusII/Uart_Pic_Sdram_VGA/Src/Lcd_Para.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}}

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat May 19 17:04:07 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : OV7725_Sdram_VGA_Disp
+Top-level Entity Name : OV7725_Sdram_VGA_Disp
+Family : Cyclone IV E
+Total logic elements : 1,126
+    Total combinational functions : 933
+    Dedicated logic registers : 575
+Total registers : 575
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

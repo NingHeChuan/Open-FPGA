@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="OV7725_Sdram_VGA_Disp">
+		<CBX_INST_ENTRY INSTANCE_NAME="|OV7725_Sdram_VGA_Disp|Clk_Pll:Clk_Pll_inst|altpll:altpll_component" CBX_FILE_NAME="Clk_Pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OV7725_Sdram_VGA_Disp|Sdram_Top:Sdram_Top_inst|Auto_Write_Read:Auto_Write_Read_inst|dfifo_16x512:rfifo_16x512_inst|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_rof1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OV7725_Sdram_VGA_Disp|Sdram_Top:Sdram_Top_inst|Auto_Write_Read:Auto_Write_Read_inst|dfifo_16x512:wfifo_16x512_inst|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_rof1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

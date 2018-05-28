@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat May 19 17:04:17 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : OV7725_Sdram_VGA_Disp
+Top-level Entity Name : OV7725_Sdram_VGA_Disp
+Family : Cyclone IV E
+Device : EP4CE10E22C8
+Timing Models : Final
+Total logic elements : 1,055 / 10,320 ( 10 % )
+    Total combinational functions : 933 / 10,320 ( 9 % )
+    Dedicated logic registers : 575 / 10,320 ( 6 % )
+Total registers : 575
+Total pins : 72 / 92 ( 78 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 423,936 ( 4 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )
