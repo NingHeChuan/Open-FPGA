@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="an">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="out">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="i2c_sdat" Dir="INOUT"/>
+		<Port Id="clk" Dir="IN"/>
+		<Port Id="rst_n" Dir="IN"/>
+		<Port Id="i2c_sclk" Dir="OUT"/>
+		<Port Id="rd_en" Dir="IN"/>
+		<Port Id="dp" Dir="OUT"/>
+		<Port Id="wr_en" Dir="IN"/>
+	</Ifc>
+</Interface>
+

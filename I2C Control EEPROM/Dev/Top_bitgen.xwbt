@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=H:\ISE\Basys2_Project_Code\I2C Control EEPROM\Dev\Top.ncd
+OUTFILE=H:\ISE\Basys2_Project_Code\I2C Control EEPROM\Dev\Top.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=H:\ISE\Basys2_Project_Code\I2C Control EEPROM\Dev
+LICENSE=WebPack
+USER_INFO=_

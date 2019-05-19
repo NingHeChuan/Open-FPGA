@@ -1,0 +1,598 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../Src/Seven_Seg_Display.v" in library work
+Compiling verilog file "../Src/I2C_Ctrl_EEPROM.v" in library work
+Module <Seven_Seg_Display> compiled
+Compiling verilog file "../Src/Ctrl_I2C_Op.v" in library work
+Module <I2C_Ctrl_EEPROM> compiled
+Compiling verilog file "../Src/Top.v" in library work
+Module <Ctrl_I2C_Op> compiled
+Module <Top> compiled
+No errors in compilation
+Analysis of file <"Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top> in library <work>.
+
+Analyzing hierarchy for module <Ctrl_I2C_Op> in library <work>.
+
+Analyzing hierarchy for module <I2C_Ctrl_EEPROM> in library <work> with parameters.
+	CAPTURE = "00000000000000000000000001111101"
+	I2C_FREQ = "00000000000000000000000011111010"
+	I2C_IDLE = "00000000000000000000000000000000"
+	I2C_RD_ACK = "00000000000000000000000000001101"
+	I2C_RD_DATA = "00000000000000000000000000001110"
+	I2C_RD_IDADDR = "00000000000000000000000000001100"
+	I2C_RD_NPACK = "00000000000000000000000000001111"
+	I2C_RD_START = "00000000000000000000000000001011"
+	I2C_RD_STOP = "00000000000000000000000000010000"
+	I2C_START = "00000000000000000000000000000001"
+	I2C_WR_ACK1 = "00000000000000000000000000000011"
+	I2C_WR_ACK2 = "00000000000000000000000000000101"
+	I2C_WR_ACK3 = "00000000000000000000000000000111"
+	I2C_WR_ACK4 = "00000000000000000000000000001001"
+	I2C_WR_DATA = "00000000000000000000000000001000"
+	I2C_WR_IDADDR = "00000000000000000000000000000010"
+	I2C_WR_REGADDR1 = "00000000000000000000000000000100"
+	I2C_WR_REGADDR2 = "00000000000000000000000000000110"
+	I2C_WR_STOP = "00000000000000000000000000001010"
+	SEND_BIT = "00000000000000000000000000001000"
+	TRANSFER = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <Seven_Seg_Display> in library <work> with parameters.
+	CLK190 = "1000000001111110101"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top>.
+Module <Top> is correct for synthesis.
+ 
+Analyzing module <Ctrl_I2C_Op> in library <work>.
+Module <Ctrl_I2C_Op> is correct for synthesis.
+ 
+Analyzing module <I2C_Ctrl_EEPROM> in library <work>.
+	CAPTURE = 32'sb00000000000000000000000001111101
+	I2C_FREQ = 32'sb00000000000000000000000011111010
+	I2C_IDLE = 32'b00000000000000000000000000000000
+	I2C_RD_ACK = 32'b00000000000000000000000000001101
+	I2C_RD_DATA = 32'b00000000000000000000000000001110
+	I2C_RD_IDADDR = 32'b00000000000000000000000000001100
+	I2C_RD_NPACK = 32'b00000000000000000000000000001111
+	I2C_RD_START = 32'b00000000000000000000000000001011
+	I2C_RD_STOP = 32'b00000000000000000000000000010000
+	I2C_START = 32'b00000000000000000000000000000001
+	I2C_WR_ACK1 = 32'b00000000000000000000000000000011
+	I2C_WR_ACK2 = 32'b00000000000000000000000000000101
+	I2C_WR_ACK3 = 32'b00000000000000000000000000000111
+	I2C_WR_ACK4 = 32'b00000000000000000000000000001001
+	I2C_WR_DATA = 32'b00000000000000000000000000001000
+	I2C_WR_IDADDR = 32'b00000000000000000000000000000010
+	I2C_WR_REGADDR1 = 32'b00000000000000000000000000000100
+	I2C_WR_REGADDR2 = 32'b00000000000000000000000000000110
+	I2C_WR_STOP = 32'b00000000000000000000000000001010
+	SEND_BIT = 32'sb00000000000000000000000000001000
+	TRANSFER = 32'sb00000000000000000000000000000001
+Module <I2C_Ctrl_EEPROM> is correct for synthesis.
+ 
+Analyzing module <Seven_Seg_Display> in library <work>.
+	CLK190 = 19'b1000000001111110101
+Module <Seven_Seg_Display> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <dp> in unit <Seven_Seg_Display> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Ctrl_I2C_Op>.
+    Related source file is "../Src/Ctrl_I2C_Op.v".
+    Found 32-bit register for signal <eeprom_config_data>.
+    Found 1-bit register for signal <i2c_start>.
+    Found 2-bit register for signal <rd_en_r>.
+    Found 2-bit register for signal <wr_en_r>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <Ctrl_I2C_Op> synthesized.
+
+
+Synthesizing Unit <I2C_Ctrl_EEPROM>.
+    Related source file is "../Src/I2C_Ctrl_EEPROM.v".
+    Found finite state machine <FSM_0> for signal <pre_state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 47                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 21                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst_n                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <i2c_rd_data>.
+    Found 1-bit tristate buffer for signal <i2c_sdat>.
+    Found 1-bit register for signal <i2c_sclk_r>.
+    Found 8-bit comparator greatequal for signal <i2c_sclk_r$cmp_ge0000> created at line 104.
+    Found 8-bit comparator lessequal for signal <i2c_sclk_r$cmp_le0000> created at line 104.
+    Found 1-bit register for signal <i2c_sdat_r>.
+    Found 1-bit register for signal <rd_ack1>.
+    Found 8-bit up counter for signal <sclk_cnt>.
+    Found 4-bit up counter for signal <tran_cnt>.
+    Found 1-bit register for signal <wr_ack1>.
+    Found 1-bit register for signal <wr_ack2>.
+    Found 1-bit register for signal <wr_ack3>.
+    Found 1-bit register for signal <wr_ack4>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <I2C_Ctrl_EEPROM> synthesized.
+
+
+Synthesizing Unit <Seven_Seg_Display>.
+    Related source file is "../Src/Seven_Seg_Display.v".
+    Found 16x7-bit ROM for signal <out$mux0000> created at line 85.
+    Found 7-bit register for signal <out>.
+    Found 19-bit up counter for signal <cnt>.
+    Found 4-bit register for signal <disp_data>.
+    Found 4-bit 4-to-1 multiplexer for signal <disp_data$mux0000> created at line 55.
+    Found 2-bit up counter for signal <s>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <Seven_Seg_Display> synthesized.
+
+
+Synthesizing Unit <Top>.
+    Related source file is "../Src/Top.v".
+Unit <Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 4
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 21
+ 1-bit register                                        : 16
+ 2-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+# Comparators                                          : 2
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 6
+ 1-bit 8-to-1 multiplexer                              : 5
+ 4-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <I2C_Ctrl_EEPROM_inst/pre_state/FSM> on signal <pre_state[1:5]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 00000
+ 00001 | 00001
+ 00010 | 00010
+ 00011 | 00011
+ 00100 | 00100
+ 00101 | 00101
+ 00110 | 00110
+ 00111 | 00111
+ 01000 | 01000
+ 01001 | 01010
+ 01010 | 01011
+ 01011 | 01001
+ 01100 | 01100
+ 01101 | 01101
+ 01110 | 01110
+ 01111 | 01111
+ 10000 | 10000
+-------------------
+INFO:Xst:2261 - The FF/Latch <eeprom_config_data_0> in Unit <Ctrl_I2C_Op_inst> is equivalent to the following 23 FFs/Latches, which will be removed : <eeprom_config_data_1> <eeprom_config_data_2> <eeprom_config_data_4> <eeprom_config_data_5> <eeprom_config_data_6> <eeprom_config_data_11> <eeprom_config_data_12> <eeprom_config_data_13> <eeprom_config_data_14> <eeprom_config_data_15> <eeprom_config_data_16> <eeprom_config_data_17> <eeprom_config_data_18> <eeprom_config_data_19> <eeprom_config_data_20> <eeprom_config_data_21> <eeprom_config_data_22> <eeprom_config_data_23> <eeprom_config_data_25> <eeprom_config_data_26> <eeprom_config_data_27> <eeprom_config_data_28> <eeprom_config_data_30> 
+INFO:Xst:2261 - The FF/Latch <eeprom_config_data_3> in Unit <Ctrl_I2C_Op_inst> is equivalent to the following 6 FFs/Latches, which will be removed : <eeprom_config_data_7> <eeprom_config_data_8> <eeprom_config_data_9> <eeprom_config_data_10> <eeprom_config_data_29> <eeprom_config_data_31> 
+WARNING:Xst:1710 - FF/Latch <eeprom_config_data_0> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op_inst>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 4
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 63
+ Flip-Flops                                            : 63
+# Comparators                                          : 2
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 6
+ 1-bit 8-to-1 multiplexer                              : 5
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <eeprom_config_data_30> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_28> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_27> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_26> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_25> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_23> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_22> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_21> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_20> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_19> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_18> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_17> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_16> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_15> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_14> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_13> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_12> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_11> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_6> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_5> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_4> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_2> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_1> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <eeprom_config_data_0> (without init value) has a constant value of 0 in block <Ctrl_I2C_Op>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <eeprom_config_data_3> in Unit <Ctrl_I2C_Op> is equivalent to the following 6 FFs/Latches, which will be removed : <eeprom_config_data_7> <eeprom_config_data_8> <eeprom_config_data_9> <eeprom_config_data_10> <eeprom_config_data_29> <eeprom_config_data_31> 
+
+Optimizing unit <Top> ...
+
+Optimizing unit <Ctrl_I2C_Op> ...
+
+Optimizing unit <Seven_Seg_Display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top.ngr
+Top Level Output File Name         : Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 268
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 27
+#      LUT2                        : 42
+#      LUT2_D                      : 1
+#      LUT2_L                      : 4
+#      LUT3                        : 20
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 70
+#      LUT4_D                      : 4
+#      LUT4_L                      : 9
+#      MUXCY                       : 30
+#      MUXF5                       : 15
+#      MUXF6                       : 5
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 71
+#      FDC                         : 46
+#      FDCE                        : 17
+#      FDP                         : 3
+#      FDPE                        : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 3
+#      IOBUF                       : 1
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      103  out of    960    10%  
+ Number of Slice Flip Flops:             71  out of   1920     3%  
+ Number of 4 input LUTs:                189  out of   1920     9%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of     83    21%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 71    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------+---------------------------------------------+-------+
+Control Signal                                                          | Buffer(FF name)                             | Load  |
+------------------------------------------------------------------------+---------------------------------------------+-------+
+Ctrl_I2C_Op_inst/rst_n_inv(Seven_Seg_Display_inst/out_Acst_inv1_INV_0:O)| NONE(Ctrl_I2C_Op_inst/eeprom_config_data_24)| 71    |
+------------------------------------------------------------------------+---------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.886ns (Maximum Frequency: 91.861MHz)
+   Minimum input arrival time before clock: 4.525ns
+   Maximum output required time after clock: 6.585ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.886ns (frequency: 91.861MHz)
+  Total number of paths / destination ports: 5523 / 79
+-------------------------------------------------------------------------
+Delay:               10.886ns (Levels of Logic = 9)
+  Source:            I2C_Ctrl_EEPROM_inst/sclk_cnt_4 (FF)
+  Destination:       I2C_Ctrl_EEPROM_inst/i2c_sdat_r (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: I2C_Ctrl_EEPROM_inst/sclk_cnt_4 to I2C_Ctrl_EEPROM_inst/i2c_sdat_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.762  I2C_Ctrl_EEPROM_inst/sclk_cnt_4 (I2C_Ctrl_EEPROM_inst/sclk_cnt_4)
+     LUT3:I0->O            5   0.704   0.668  I2C_Ctrl_EEPROM_inst/transfer_en_cmp_eq0000_SW0_SW0 (N26)
+     LUT4:I2->O           18   0.704   1.072  I2C_Ctrl_EEPROM_inst/transfer_en_cmp_eq0000 (I2C_Ctrl_EEPROM_inst/transfer_en)
+     LUT4:I3->O            1   0.704   0.000  I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4-In4 (I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4-In4)
+     MUXF5:I0->O           1   0.321   0.000  I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4-In_f5_0 (I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4-In_f51)
+     MUXF6:I0->O          15   0.521   1.052  I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4-In_f6 (I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4-In)
+     LUT3_L:I2->LO         1   0.704   0.104  I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000152_SW0_SW0 (N34)
+     LUT4:I3->O            1   0.704   0.455  I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000160 (I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000160)
+     LUT4_L:I2->LO         1   0.704   0.104  I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000222 (I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000222)
+     LUT4:I3->O            1   0.704   0.000  I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000249 (I2C_Ctrl_EEPROM_inst/i2c_sdat_r_mux0000)
+     FDP:D                     0.308          I2C_Ctrl_EEPROM_inst/i2c_sdat_r
+    ----------------------------------------
+    Total                     10.886ns (6.669ns logic, 4.217ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 18
+-------------------------------------------------------------------------
+Offset:              4.525ns (Levels of Logic = 3)
+  Source:            i2c_sdat (PAD)
+  Destination:       I2C_Ctrl_EEPROM_inst/rd_ack1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: i2c_sdat to I2C_Ctrl_EEPROM_inst/rd_ack1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O          12   1.218   1.136  i2c_sdat_IOBUF (N24)
+     LUT4_D:I0->O          1   0.704   0.455  I2C_Ctrl_EEPROM_inst/wr_ack2_mux000034_SW0 (N671)
+     LUT4:I2->O            1   0.704   0.000  I2C_Ctrl_EEPROM_inst/rd_ack1_mux000034 (I2C_Ctrl_EEPROM_inst/rd_ack1_mux0000)
+     FDPE:D                    0.308          I2C_Ctrl_EEPROM_inst/rd_ack1
+    ----------------------------------------
+    Total                      4.525ns (2.934ns logic, 1.591ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 13
+-------------------------------------------------------------------------
+Offset:              6.585ns (Levels of Logic = 3)
+  Source:            I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4 (FF)
+  Destination:       i2c_sdat (PAD)
+  Source Clock:      clk rising
+
+  Data Path: I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4 to i2c_sdat
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.591   1.277  I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4 (I2C_Ctrl_EEPROM_inst/pre_state_FSM_FFd4)
+     LUT3:I0->O            1   0.704   0.000  I2C_Ctrl_EEPROM_inst/bir_en_inv2 (I2C_Ctrl_EEPROM_inst/bir_en_inv2)
+     MUXF5:I0->O           1   0.321   0.420  I2C_Ctrl_EEPROM_inst/bir_en_inv_f5 (I2C_Ctrl_EEPROM_inst/bir_en_inv)
+     IOBUF:T->IO               3.272          i2c_sdat_IOBUF (i2c_sdat)
+    ----------------------------------------
+    Total                      6.585ns (4.888ns logic, 1.697ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.67 secs
+ 
+--> 
+
+Total memory usage is 355620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

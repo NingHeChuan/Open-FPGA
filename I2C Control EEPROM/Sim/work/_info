@@ -1,0 +1,173 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/ISE/Basys2_Project_Code/I2C Control EEPROM/Sim
+T_opt
+Z1 !s110 1535189838
+Vj]@WS2z739?9^NFZLg;mL3
+04 6 4 work TB_Top fast 0
+=2-b05216b1ad13-5b81234e-208-3698
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vCtrl_I2C_Op
+R1
+!i10b 1
+!s100 nmo8TBgZ7=;jTzcil9>J?1
+IFSDInhR4J`XnYb<5>E?GT0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1534672323
+8../Src/Ctrl_I2C_Op.v
+F../Src/Ctrl_I2C_Op.v
+Z4 L0 23
+Z5 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z6 !s108 1535189838.000000
+Z7 !s107 ../Src/Top.v|../Src/Seven_Seg_Display.v|../Src/I2C_Ctrl_EEPROM.v|../Src/Ctrl_I2C_Op.v|
+Z8 !s90 -reportprogress|300|../Src/Ctrl_I2C_Op.v|../Src/I2C_Ctrl_EEPROM.v|../Src/Seven_Seg_Display.v|../Src/Top.v|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@ctrl_@i2@c_@op
+vEEPROM_AT24C64
+R1
+!i10b 1
+!s100 0_[gQW@Cn4XG>Bn7a4m;>0
+I2dnhPecYnjVUKM2JIb1HA0
+R3
+R0
+w1534668272
+8../Sim/EEPROM_AT24C64.v
+F../Sim/EEPROM_AT24C64.v
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 ../Sim/TB_Top.v|../Sim/TB_I2C_Ctrl_EEPROM.v|../Sim/EEPROM_AT24C64.v|
+Z11 !s90 -reportprogress|300|../Sim/EEPROM_AT24C64.v|../Sim/TB_I2C_Ctrl_EEPROM.v|../Sim/TB_Top.v|
+!i113 0
+R9
+R2
+n@e@e@p@r@o@m_@a@t24@c64
+vI2C_Ctrl_EEPROM
+R1
+!i10b 1
+!s100 GM`EiWhJmY3EMS>F9d``n0
+I:2`YKzD=c;>;4TOB]naci3
+R3
+R0
+w1534671737
+8../Src/I2C_Ctrl_EEPROM.v
+F../Src/I2C_Ctrl_EEPROM.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@i2@c_@ctrl_@e@e@p@r@o@m
+vSeven_Seg_Display
+R1
+!i10b 1
+!s100 _=S@YEkgk41knQ]3oHcBP3
+I:WJO2@NTka8MODcbU=9NU1
+R3
+R0
+w1534039129
+8../Src/Seven_Seg_Display.v
+F../Src/Seven_Seg_Display.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@seven_@seg_@display
+vTB_I2C_Ctrl_EEPROM
+R1
+!i10b 1
+!s100 @BJ@GMIVlmQz?nKJ5_ije0
+Igb=ZmMY4>hVXSBM7lA4ZC2
+R3
+R0
+w1534664219
+8../Sim/TB_I2C_Ctrl_EEPROM.v
+F../Sim/TB_I2C_Ctrl_EEPROM.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R10
+R11
+!i113 0
+R9
+R2
+n@t@b_@i2@c_@ctrl_@e@e@p@r@o@m
+vTB_Top
+R1
+!i10b 1
+!s100 F=0CfLV>UfDOcbO4iGi:K2
+IaIl[;?k`DJ0Vn9>I0lXh40
+R3
+R0
+w1534668455
+8../Sim/TB_Top.v
+F../Sim/TB_Top.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R10
+R11
+!i113 0
+R9
+R2
+n@t@b_@top
+vTop
+R1
+!i10b 1
+!s100 ]Enn@kdZ`E:Zb8PODRm343
+Ik>_OB4DPZV0B^K3@I^heb2
+R3
+R0
+w1534665265
+8../Src/Top.v
+F../Src/Top.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@top

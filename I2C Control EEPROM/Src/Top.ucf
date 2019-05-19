@@ -1,0 +1,49 @@
+//数码管驱动
+NET "an[3]" LOC = K14;
+NET "an[2]" LOC = M13;
+NET "an[1]" LOC = J12;
+NET "an[0]" LOC = F12;
+//七段数码管
+NET "out[6]" LOC = L14;
+NET "out[5]" LOC = H12;
+NET "out[4]" LOC = N14;
+NET "out[3]" LOC = N11;
+NET "out[2]" LOC = P12;
+NET "out[1]" LOC = L13;
+NET "out[0]" LOC = M12;
+NET "dp" LOC = N13;
+
+NET "clk" LOC = B8;
+NET "rst_n" LOC = P11;
+
+
+
+
+NET "an[3]" IOSTANDARD = LVCMOS33;
+NET "an[2]" IOSTANDARD = LVCMOS33;
+NET "an[1]" IOSTANDARD = LVCMOS33;
+NET "an[0]" IOSTANDARD = LVCMOS33;
+NET "out[6]" IOSTANDARD = LVCMOS33;
+NET "out[5]" IOSTANDARD = LVCMOS33;
+NET "out[4]" IOSTANDARD = LVCMOS33;
+NET "out[3]" IOSTANDARD = LVCMOS33;
+NET "out[2]" IOSTANDARD = LVCMOS33;
+NET "out[1]" IOSTANDARD = LVCMOS33;
+NET "out[0]" IOSTANDARD = LVCMOS33;
+NET "dp" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated IO constraints 
+
+NET "i2c_sclk" IOSTANDARD = LVCMOS33;
+NET "i2c_sdat" IOSTANDARD = LVCMOS33;
+NET "rd_en" IOSTANDARD = LVCMOS33;
+NET "rst_n" IOSTANDARD = LVCMOS33;
+NET "wr_en" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "i2c_sclk" LOC = B9;
+NET "i2c_sdat" LOC = A9;
+NET "rd_en" LOC = K3;
+NET "wr_en" LOC = L3;

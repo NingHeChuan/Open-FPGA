@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Aug 19 16:16:56 2018
+# Process ID: 15032
+# Log file: H:/ISE/I2C Control EEPROM/Dev/planAhead_run_1/planAhead.log
+# Journal file: H:/ISE/I2C Control EEPROM/Dev/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {H:/ISE/I2C Control EEPROM/Dev/pa.fromNetlist.tcl}
+set_property iostandard LVCMOS33 [get_ports [list i2c_sclk]]
+set_property iostandard LVCMOS33 [get_ports [list i2c_sdat]]
+set_property iostandard LVCMOS33 [get_ports [list rd_en]]
+set_property iostandard LVCMOS33 [get_ports [list rst_n]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list wr_en]]
+startgroup
+set_property package_pin C9 [get_ports i2c_sclk]
+endgroup
+set_property package_pin "" [get_ports [list  i2c_sdat]]
+startgroup
+set_property package_pin B9 [get_ports i2c_sclk]
+endgroup
+startgroup
+set_property package_pin A9 [get_ports i2c_sdat]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports rd_en]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports wr_en]
+endgroup
+save_constraints

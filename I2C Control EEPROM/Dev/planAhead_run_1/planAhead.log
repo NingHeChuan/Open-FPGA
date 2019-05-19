@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Aug 19 16:16:56 2018
+# Process ID: 15032
+# Log file: H:/ISE/I2C Control EEPROM/Dev/planAhead_run_1/planAhead.log
+# Journal file: H:/ISE/I2C Control EEPROM/Dev/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source {H:/ISE/I2C Control EEPROM/Dev/pa.fromNetlist.tcl}
+# create_project -name I2C_Ctrl_EEPROM -dir "H:/ISE/I2C Control EEPROM/Dev/planAhead_run_1" -part xc3s100ecp132-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "H:/ISE/I2C Control EEPROM/Dev/Top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {H:/ISE/I2C Control EEPROM/Dev} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "H:/ISE/I2C Control EEPROM/Src/Top.ucf" [current_fileset -constrset]
+Adding file 'H:/ISE/I2C Control EEPROM/Src/Top.ucf' to fileset 'constrs_1'
+# add_files [list {H:/ISE/I2C Control EEPROM/Src/Top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s100ecp132-4
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Top.ngc ...
+WARNING:NetListWriters:298 - No output is written to Top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Ctrl_I2C_Op_inst/eeprom_config_data<24 :
+   0> on block Top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Top.edif ...
+ngc2edif: Total memory usage is 115660 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/I2C_Ctrl_EEPROM.data/cache/Top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/I2C_Ctrl_EEPROM.data/cache/Top_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [H:/ISE/I2C Control EEPROM/Src/Top.ucf]
+Finished Parsing UCF File [H:/ISE/I2C Control EEPROM/Src/Top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 3b6cc83a
+set_property iostandard LVCMOS33 [get_ports [list i2c_sclk]]
+set_property iostandard LVCMOS33 [get_ports [list i2c_sdat]]
+set_property iostandard LVCMOS33 [get_ports [list rd_en]]
+set_property iostandard LVCMOS33 [get_ports [list rst_n]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list wr_en]]
+startgroup
+set_property package_pin C9 [get_ports i2c_sclk]
+endgroup
+set_property package_pin "" [get_ports [list  i2c_sdat]]
+startgroup
+set_property package_pin B9 [get_ports i2c_sclk]
+endgroup
+startgroup
+set_property package_pin A9 [get_ports i2c_sdat]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports rd_en]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports wr_en]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See H:/ISE/I2C Control EEPROM/Dev\planAhead_pid15032.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Aug 19 16:31:33 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

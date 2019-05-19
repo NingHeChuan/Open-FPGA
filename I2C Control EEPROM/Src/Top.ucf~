@@ -1,0 +1,52 @@
+//数码管驱动
+NET "an[3]" LOC = K14;
+NET "an[2]" LOC = M13;
+NET "an[1]" LOC = J12;
+NET "an[0]" LOC = F12;
+//七段数码管
+NET "out[6]" LOC = L14;
+NET "out[5]" LOC = H12;
+NET "out[4]" LOC = N14;
+NET "out[3]" LOC = N11;
+NET "out[2]" LOC = P12;
+NET "out[1]" LOC = L13;
+NET "out[0]" LOC = M12;
+NET "dp" LOC = N13;
+
+NET "clk" LOC = B8;
+NET "rst_n" LOC = P11;
+
+
+NET "col_data[0]" LOC = C9;
+NET "col_data[1]" LOC = A10;
+NET "col_data[2]" LOC = B9;
+NET "col_data[3]" LOC = A9;
+NET "row_data[0]" LOC = B7;
+NET "row_data[1]" LOC = C5;
+NET "row_data[2]" LOC = B6;
+NET "row_data[3]" LOC = C6;
+
+
+# PlanAhead Generated IO constraints 
+
+NET "an[3]" IOSTANDARD = LVCMOS33;
+NET "an[2]" IOSTANDARD = LVCMOS33;
+NET "an[1]" IOSTANDARD = LVCMOS33;
+NET "an[0]" IOSTANDARD = LVCMOS33;
+NET "col_data[3]" IOSTANDARD = LVCMOS33;
+NET "col_data[2]" IOSTANDARD = LVCMOS33;
+NET "col_data[1]" IOSTANDARD = LVCMOS33;
+NET "col_data[0]" IOSTANDARD = LVCMOS33;
+NET "out[6]" IOSTANDARD = LVCMOS33;
+NET "out[5]" IOSTANDARD = LVCMOS33;
+NET "out[4]" IOSTANDARD = LVCMOS33;
+NET "out[3]" IOSTANDARD = LVCMOS33;
+NET "out[2]" IOSTANDARD = LVCMOS33;
+NET "out[1]" IOSTANDARD = LVCMOS33;
+NET "out[0]" IOSTANDARD = LVCMOS33;
+NET "dp" IOSTANDARD = LVCMOS33;
+NET "row_data[3]" IOSTANDARD = LVCMOS33 | pullup;
+NET "row_data[2]" IOSTANDARD = LVCMOS33 | pullup;
+NET "row_data[1]" IOSTANDARD = LVCMOS33 | pullup;
+NET "row_data[0]" IOSTANDARD = LVCMOS33 | pullup;
+NET "clk" IOSTANDARD = LVCMOS33;

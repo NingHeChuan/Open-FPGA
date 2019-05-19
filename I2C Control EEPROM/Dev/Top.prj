@@ -1,0 +1,4 @@
+verilog work "../Src/Seven_Seg_Display.v"
+verilog work "../Src/I2C_Ctrl_EEPROM.v"
+verilog work "../Src/Ctrl_I2C_Op.v"
+verilog work "../Src/Top.v"

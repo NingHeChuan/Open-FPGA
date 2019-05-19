@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=H:\ISE\I2C Control EEPROM\Dev\impact.xsl
+OUTFILE=H:\ISE\I2C Control EEPROM\Dev\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=H:\ISE\I2C Control EEPROM\Dev
+LICENSE=iMPACT
+USER_INFO=iMPACT
